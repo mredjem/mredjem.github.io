@@ -1,0 +1,24 @@
+# Reading settings
+encoding: 'utf-8'
+
+# Personal settings
+title: Medhi Redjem
+email: "medhi.redjem@gmail.com"
+description: medhi redjem personal website
+github_username: mredjem
+
+# Serving settings
+port: 4000
+host: 127.0.0.1
+baseurl: ''
+include: ['_pages']
+
+# Build settings
+sass:
+  sass_dir: _sass
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - Gemfile
+  - Gemfile.lock
