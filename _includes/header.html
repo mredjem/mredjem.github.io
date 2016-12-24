@@ -1,0 +1,14 @@
+<header role="navigation">
+  <div class="logo">
+    <span>Medhi Redjem</span>
+  </div>
+  <nav class="nav-wrapper">
+    <ul class="nav-list">
+      {% for page in site.pages %}{% if page.title %}
+      <li>
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      </li>
+      {% endif %}{% endfor %}
+    </ul>
+  </nav>
+</header>
