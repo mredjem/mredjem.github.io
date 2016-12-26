@@ -1,2 +1,18 @@
+// body font family
+$font: 'Raleway', sans-serif;
+//body background color
+$background-color: white;
+
+// navigation header height
 $header-height: 5rem;
-$link-hover-color: #e36767;
+// navigation header background color
+$header-background-color: $background-color;
+
+// main font colors
+$link-hover-color: #e35c00;
+$main-color: #33414a;
+$header-color: $main-color;
+$footer-color: #666;
+
+// main font family
+$main-font: 'Muli', sans-serif;

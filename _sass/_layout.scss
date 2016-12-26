@@ -1,8 +1,8 @@
 body {
-  background-color: #f2f2f2;
+  background-color: $background-color;
   font: {
     size: 1em;
-    family: 'Raleway', sans-serif;
+    family: $font;
   }
   -webkit-font-smoothing: antialiased;
 }
@@ -11,17 +11,18 @@ header[role=navigation] {
   position: fixed;
   height: $header-height;
   width: 100%;
-  background-color: #33414a;
-  border-bottom: solid 4px black;
+  background-color: $header-background-color;
+  border-top: solid 4px $link-hover-color;
+  border-bottom: solid 1.5px lighten($footer-color, 50%);
   
   div.logo {
     position: absolute;
     top: 2rem;
     left: 5rem;
-    font-weight: bold;
-    color: white;
     a, a:hover, a:visited {
       text-decoration: none;
+      font-weight: bold;
+      color: $header-color;
     }
   }
   
@@ -34,9 +35,10 @@ header[role=navigation] {
       li {
         display: inline-block;
         padding: 0 1.5em;
+        text-transform: lowercase;
         a, a:visited {
           font-weight: bold;
-          color: white;
+          color: $header-color;
           text-decoration: none;
         }
         a:hover {
@@ -56,22 +58,31 @@ main[role=main] {
   article {
     height: inherit;
     div.content {
-      padding-top: 80px;
+      padding-top: 25px;
       margin: 0 auto;
       width: 90%;
       max-width: 600px;
       text-align: center;
-      font-family: 'Roboto Condensed', sans-serif;
-      color: #33414a;
+      font-family: $main-font;
+      color: $main-color;
       h1 {
         font: {
           size: 2.5em;
           weight: bolder;
         }
+        padding-bottom: 0.5em;
+      }
+      div.profile {
+        margin: 0 auto;
+        img {
+          border-radius: 100px;
+          box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        }
       }
       p {
-        padding-top: 25px;
-        font-size: 1.5em;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-top: 0.8em;
         &.contact {
           padding-top: 40px;
           a {
@@ -86,6 +97,38 @@ main[role=main] {
           }
         }
       }
+      form.contact-form {
+        ul {
+          padding: 15px;
+          li {
+            input, textarea {
+              width: 450px;
+              padding: 0.5em;
+              border-radius: 5px;
+              border: 2px solid $main-color;
+              font-size: 0.8rem;
+              line-height: 1.5rem;
+              margin-bottom: 0.5em;
+              box-sizing: border-box;
+              outline:0;
+              background-color: transparent;
+            }
+            textarea {
+              height: 150px;
+            }
+            [type=submit] {
+              cursor: pointer;
+              color: white;
+              background: $main-color;
+              text-transform: uppercase;
+              font-weight: bold;
+              &:hover {
+                
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -93,7 +136,7 @@ main[role=main] {
 div.site-footer {
   footer {
     p {
-      color: #666;
+      color: $footer-color;
       font-size: 1.2em;
       text-align: center;
       opacity: 0.6;
