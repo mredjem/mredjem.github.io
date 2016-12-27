@@ -62,17 +62,26 @@ main[role=main] {
       margin: 0 auto;
       width: 90%;
       max-width: 600px;
-      text-align: center;
+      text-align: justify;
       font-family: $main-font;
       color: $main-color;
+      blockquote {
+        font-style: italic;
+        border-left: 4px solid #ddd;
+        font-size: 0.85em;
+        margin: 0 0 1em;
+        padding: 1% 3%;
+      }
       h1 {
         font: {
           size: 2.5em;
           weight: bolder;
         }
+        text-align: center;
         padding-bottom: 0.5em;
       }
       div.profile {
+        text-align: center;
         margin: 0 auto;
         img {
           border-radius: 100px;
@@ -84,6 +93,7 @@ main[role=main] {
         line-height: 1.5em;
         margin-top: 0.8em;
         &.contact {
+          text-align: center;
           padding-top: 40px;
           a {
             color: #444;
@@ -98,6 +108,7 @@ main[role=main] {
         }
       }
       form.contact-form {
+        text-align: center;
         ul {
           padding: 15px;
           li {

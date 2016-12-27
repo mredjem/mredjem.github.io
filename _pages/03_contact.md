@@ -4,7 +4,9 @@ title: contact
 permalink: /contact/
 ---
 
-<i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i> medhi.redjem@gmail.com
+<div style="text-align: center">
+  <i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i> medhi.redjem@gmail.com
+</div>
 
 <form class="contact-form" name="contactForm">
   <ul>
