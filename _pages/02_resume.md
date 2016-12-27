@@ -11,9 +11,6 @@ Ingénieur JavaEE/Javascript à Nextoo
 > Le but de la mission est de permettre de faciliter l'exploitation et la
 distribution des données de ventes de Décathlon dans le SI.
 >
-> Transformation des tickets de caisse vers le format XML POSLog avec génération
-des parseurs JAXB et XMLBeans. 
->
 > Développement d'un mapping XSLT pour permettre cette conversion. Création 
 d'une brique applicative exploitant le framework Camel et déployée sur un 
 environnement Windows avec Procrun.
